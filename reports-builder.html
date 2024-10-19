@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>NAC Billing Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+        <script src="https://kit.fontawesome.com/151a7a2238.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+    <main>
+        <section class="billing-tabs-section forms-section">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="wrapper">
+                            <!-- Sidebar  -->
+                            <div id="sidebar" class="bg-grey px-3">
+                                <div class="left-sidebar nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <img class="img-fluid nac-logo mb-4" alt="Site Logo" src="images/nac-logo.png" />
+                                    <button class="nav-link" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="false">
+                                        <span>Dashboard</span>
+                                    </button>
+
+                                    <button class="nav-link active" id="v-pills-new-account" data-bs-toggle="pill" data-bs-target="#v-pills-new-acnt" type="button" role="tab" aria-controls="v-pills-new-acnt" aria-selected="false">
+                                        <span>New Accounts</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-accounts" data-bs-toggle="pill" data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-accounts" aria-selected="false">
+                                        <span>Accounts</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-client-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="false">
+                                        <span>Client Management</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payments" type="button" role="tab" aria-controls="v-pills-payments" aria-selected="false">
+                                        <span>Payments</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
+                                        <span>Reports</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-letters-tab" data-bs-toggle="pill" data-bs-target="#v-pills-letters" type="button" role="tab" aria-controls="v-pills-letters" aria-selected="false">
+                                        <span>Letters</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-infinitione-tab" data-bs-toggle="pill" data-bs-target="#v-pills-infinitione" type="button" role="tab" aria-controls="v-pills-infinitione" aria-selected="false">
+                                        <span>InfinitiONE</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-system-tab" data-bs-toggle="pill" data-bs-target="#v-pills-system" type="button" role="tab" aria-controls="v-pills-system" aria-selected="false">
+                                        <span>System</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-help-tab" data-bs-toggle="pill" data-bs-target="#v-pills-help" type="button" role="tab" aria-controls="v-pills-help" aria-selected="false"><span>HELP</span></button>
+                                </div>
+                            </div>
+
+                            <!-- Page Content  -->
+                            <div id="content" class="">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                                        <!-- tab inner content -->
+                                        <!-- tab inner content -->
+                                    </div>
+                                    <div class="tab-pane fade active show" id="v-pills-new-acnt" role="tabpanel" aria-labelledby="v-pills-new-account">
+                                    <!-- tab inner content -->
+                                    <!-- tab inner content -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-accounts">accounts</div>
+                                    <div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-client-tab">client-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">payment-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+                                    <!-- tab inner content -->
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <nav class="navbar navbar-expand-lg dashboard-header">
+                                                <div class="container-fluid px-0">
+                                                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                                        <i class="fas fa-align-justify text-white" aria-hidden="true"></i>
+                                                    </button>
+                                                    <h3 class="mb-0">Report Builder</h3>
+                                                    <input type="text" placeholder="Search Everything">
+                                                    <div class="header-links">
+                                                        <span>Welcome, Aaron</span>
+                                                        <a class="my-account-link" href="#">My Account</a>।<a class="logout-link" href="#">Logout</a>
+                                                    </div>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                    <h3 class="text-capitalize text-secondary fw-bold">Advanced Account Report</h3>
+                                    <div class="mt-4 gap-4 bg-grey p-4 d-lg-flex align-items-end">
+                                        <div class="account-information-col">
+                                            <label class="form-label">Client</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-information-col">
+                                            <label class="form-label">Status</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-information-col">
+                                            <label class="form-label">Method</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-information-col">
+                                            <label class="form-label">Type</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-information-col">
+                                            <label class="form-label">Month-to-Month</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                        <div class="account-information-col">
+                                            <label class="form-label">Enhancement Fee</label>
+                                            <select name="status" id="status">
+                                                <option value="N">All</option>
+                                                <option value="Y">All</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-end my-5">
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Entry Date</label>
+                                            <input type="date" id="contracted-date" name="contracted date">
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date">
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Contracted date</label>
+                                            <input type="date" id="contracted-date" name="contracted date">
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date">
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Expiration Date</label>
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-end">
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">First Payment Date</label>
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Frozen date</label>
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Cancel Date</label>
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-end my-5">
+                                        <div class="col-lg-2">
+                                            <label class="form-label ">Paid Until Date</label>
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                        <div class="col-lg-2 thru-icon">
+                                            <input type="date" id="contracted-date" name="contracted date" >
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <p>*Bad Debt Date(Requires Status of "bad Debt")</p>
+                                            <div class="build-report d-flex align-items-baseline gap-4">
+                                                <button type="submit" class="site-btn mt-4">Build Report</button>
+                                                <p><a href="#" >Clear</a></p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <!-- tab inner content -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-letters" role="tabpanel" aria-labelledby="v-pills-letters-tab">letters-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-infinitione" role="tabpanel" aria-labelledby="v-pills-infinitione-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-system" role="tabpanel" aria-labelledby="v-pills-system-tab">system-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">help-tab</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/calendar.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal",
+                });
+
+                $("#sidebarCollapse").on("click", function () {
+                    $("#sidebar, #content").toggleClass("active");
+                    $(".collapse.in").toggleClass("in");
+                    $("a[aria-expanded=true]").attr("aria-expanded", "false");
+                });
+            });
+        </script>
+        <script type="text/javascript">
+          // Load google charts
+          google.charts.load('current', {'packages':['corechart']});
+          google.charts.setOnLoadCallback(drawChart);
+          
+          // Draw the chart and set the chart values
+          function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+            ['Task', 'Hours per Day'],
+            ['Canceled (80)', 8],
+            ['Bad Debt (3)', 2],
+            ['Expired (120)', 4],
+            ['Delinquent (0)', 2],
+            ['Active (7)', 8]
+            ['Frozen (32)', 8]
+            ['Paid In Full (12)', 8]
+          ]);
+          
+            // Optional; add a title and set the width and height of the chart
+            var options = {'title':'', 'width':550, 'height':400};
+          
+            // Display the chart inside the <div> element with id="piechart"
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+            chart.draw(data, options);
+          }
+          </script>
+    </body>
+</html>
