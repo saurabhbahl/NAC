@@ -689,6 +689,21 @@ ul.saved-reports-links {
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 20px;
 }
+form.roles-check {
+    display: inline-grid;
+    gap: 5px;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto;
+}
+form.roles-check label {
+    padding-right: 20px;
+}
+.user-btns {
+    background: #eeeeee;
+}
+
+
+
+
 
 /******* media queries *********/
 @media screen and (min-width:992px) {
