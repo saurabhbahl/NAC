@@ -479,6 +479,12 @@ button.btn.btn-primary.view-agreement-btn {
     margin-right: 20px;
     text-decoration: underline;
 }
+.maintenance-fee-col .form-label {
+    display: block;
+}
+.maintenance-fee-col input, .maintenance-fee-col {
+    width: 100%;
+}
 .agreement-buttons a:hover, button.btn.btn-primary.view-agreement-btn:hover {
     text-decoration: none;
 }
