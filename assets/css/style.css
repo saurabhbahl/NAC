@@ -373,6 +373,11 @@ a.view-all-reports {
 }
 .account-information-col {
     width: auto;
+}
+.percent-icon {
+    margin-right: 10px;
+}
+.first-name, .p-10 {
     padding-right: 10px;
 }
 .nac-process input, .input-me-5 input[type="checkbox"], input[type="radio"] {
