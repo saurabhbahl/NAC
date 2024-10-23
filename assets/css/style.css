@@ -482,9 +482,9 @@ button.btn.btn-primary.view-agreement-btn {
 .maintenance-fee-col .form-label {
     display: block;
 }
-.maintenance-fee-col input, .maintenance-fee-col {
+/* .maintenance-fee-col input, .maintenance-fee-col {
     width: 100%;
-}
+} */
 .agreement-buttons a:hover, button.btn.btn-primary.view-agreement-btn:hover {
     text-decoration: none;
 }
@@ -695,6 +695,11 @@ ul.saved-reports-links {
 }
 .status strong {
     padding-right: 10px;
+    padding-bottom: 5px;
+    display: block;
+}
+form.late-lettters-form {
+    display: inline-block;
 }
 .border-bottom-grey {
     border-bottom: 1px solid #b3b3b3;
