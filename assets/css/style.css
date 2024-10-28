@@ -133,6 +133,13 @@ button.site-btn {
     background-image: url(../../images/search-icon.png);
     background-repeat: no-repeat !important;
     background-size: 15px;
+    border: 1px solid #000;
+}
+.modal-body-ps {
+    padding-left: 100px!important;
+}
+.visitor-info span {
+    font-size: 14px;
 }
 .search_input {
     padding: 5px 9px 5px 27px;
@@ -590,7 +597,29 @@ ul.saved-reports-links {
 #webappsModal .modal-body, #webappsModal .modal-header {
     padding: 30px;
 }
-.modal .modal-dialog {
+.infinitione-tabs-section .btn.infinitione-btn:hover {
+    background: none!important;
+    border-color: none!important;
+}
+.infinitione-modal .modal-logo {
+    width: 140px;
+}
+.infinitione-modal button.btn-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.infinitione-modal .modal-content {
+    border-radius: 0;
+    border: 2px solid #000;
+}
+.infinitione-modal .modal-dialog {
+    max-width: 800px;
+}
+.infinitione-modal .modal-body {
+    padding: 0;
+}
+.billing-tabs-section .modal .modal-dialog {
     position: fixed;
     margin: auto;
     width: 320px;
@@ -601,12 +630,12 @@ ul.saved-reports-links {
     transform: translate3d(0%, 0, 0);
     right: -320px;
 }
-.modal .modal-content {
+.billing-tabs-section .modal .modal-content {
     height: 100%;
     overflow-y: auto;
     border-radius: 0px;
 }
-.modal.show .modal-dialog {
+.billing-tabs-section .modal.show .modal-dialog {
     right: 0;
     -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
