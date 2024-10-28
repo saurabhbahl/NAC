@@ -716,10 +716,30 @@ form.roles-check label {
 .user-btns {
     background: #eeeeee;
 }
-
-
-
-
+.add-promo, .wysiwyg-textarea a {
+    color: #000;
+}
+.wysiwyg-textarea a i {
+    padding-right: 0px;
+}
+.wysiwyg-textarea select {
+    width: auto;
+}
+.wysiwyg-textarea {
+    border: 1px solid #000;
+    border-bottom: none;
+    padding: 5px;
+}
+.campaign-input-col {
+    display: flex;
+    flex-direction: column;
+}
+.text-unset {
+    text-transform: unset;
+}
+.schedule-later-row {
+    background: #ddd;
+}
 
 /******* media queries *********/
 @media screen and (min-width:992px) {
