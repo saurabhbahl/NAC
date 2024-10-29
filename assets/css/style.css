@@ -3,16 +3,23 @@
 :root {
   --blue:#1a4aa0;
   --grey:#eeeeee;
+  --red:#e61313;
 }
 body {
     font-family: "Open Sans", sans-serif;
     color: #000;
+}
+.bg-red {
+    background-color: var(--red); 
 }
 .bg-grey {
     background-color: var(--grey); 
 }
 .bg-blue {
     background-color: var(--blue); 
+}
+.text-red, .text-red * {
+    color: var(--red);
 }
 h1 {
     font-size: 40px;
@@ -135,9 +142,6 @@ button.site-btn {
     background-size: 15px;
     border: 1px solid #000;
 }
-.modal-body-ps {
-    padding-left: 100px!important;
-}
 .visitor-info span {
     font-size: 14px;
 }
@@ -170,7 +174,7 @@ button#sidebarCollapse {
     height: 100vh;
     z-index: 999;
     color: #fff;
-    transition: all 0.3s;
+    /* transition: all 0.3s; */
     padding-top: 190px;
 }
 #sidebar.active {
@@ -510,9 +514,11 @@ button.btn.btn-primary.view-agreement-btn {
     position: absolute;
     right: 10px;
     margin: 0;
+    top: 10px;
 }
 .agreement-modal .modal-header {
     justify-content: center;
+    border-bottom: 0;
 }
 .account-report-fields select {
     width: auto;
@@ -612,14 +618,18 @@ ul.saved-reports-links {
 .infinitione-modal .modal-content {
     border-radius: 0;
     border: 2px solid #000;
+    padding-bottom: 80px;
+}
+.infinitione-modal .nav-tabs .nav-link {
+    padding: 10px 8px;
 }
 .infinitione-modal .modal-dialog {
-    max-width: 800px;
+    max-width: 1100px;
 }
 .infinitione-modal .modal-body {
     padding: 0;
 }
-.billing-tabs-section .modal .modal-dialog {
+.billing-tabs-section .modal .modal-dialog:not(.billing-tabs-section .agreement-modal.modal .modal-dialog) {
     position: fixed;
     margin: auto;
     width: 320px;
@@ -630,19 +640,26 @@ ul.saved-reports-links {
     transform: translate3d(0%, 0, 0);
     right: -320px;
 }
-.billing-tabs-section .modal .modal-content {
+.billing-tabs-section .modal .modal-content:not(.billing-tabs-section .agreement-modal.modal .modal-content) {
     height: 100%;
     overflow-y: auto;
     border-radius: 0px;
 }
-.billing-tabs-section .modal.show .modal-dialog {
+.billing-tabs-section .modal.show .modal-dialog:not(.billing-tabs-section .agreement-modal.modal.show .modal-dialog) {
     right: 0;
     -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
     transition: opacity 0.3s linear, right 0.3s ease-out;
 } 
-.edit-client h6 {
+.agreement-modal.modal .modal-content {
+    border: 2px solid #000;
+    border-radius: 0;
+}
+.agreement-modal .modal-footer {
+    border-top: 0;
+}
+.edit-client h6, .access-deny-col p, .agreement-modal .modal-header p {
     margin-bottom: 0;
 }
 .status i {
@@ -655,20 +672,20 @@ ul.saved-reports-links {
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 20px;
 }
-.accounts-tabs li.nav-item {
+.nav-tabs li.nav-item {
     border: 1px solid #000;
     width: 100%;
 }
-.accounts-tabs .nav-tabs .nav-link {
+.nav-tabs .nav-link {
     margin: auto;
     border: none;
     border-radius: 0;  
     width: 100%;
 }
-.text-black, .accounts-tabs .nav-tabs .nav-link {
+.text-black, .nav-tabs .nav-link {
     color:#000;
 }
-.accounts-tabs .nav-tabs .nav-link.active {
+.nav-tabs .nav-link.active {
     background: #1a4aa073;
     font-weight: 600;
 }
@@ -733,6 +750,36 @@ form.late-lettters-form {
 .border-bottom-grey {
     border-bottom: 1px solid #b3b3b3;
     padding-bottom: 20px;
+}
+.modal-max-container {
+    width: 1040px;
+    padding-left: 120px !important;
+}
+.member-profile-info strong {
+    display: block;
+}
+.member-profile-info a {
+   text-decoration: none;
+   color: #000;
+}
+.member-profile-info a:hover {
+    text-decoration: underline;
+}
+.member-profile-info li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.exp-highlight i {
+    font-size: 26px;
+}
+.exp-highlight p {
+   margin-bottom: 0;
+}
+.access-deny-col ul {
+    list-style: disc;
+    padding: 10px 20px;
+}
+.maintenance-row .site-btn {
+    padding: 10px 10px !important;
 }
 form.roles-check {
     display: inline-grid;

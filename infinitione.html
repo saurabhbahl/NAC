@@ -1036,26 +1036,157 @@
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <div class="modal-checkin-form gap-3 modal-body-ps p-4 d-lg-flex align-items-center bg-grey justify-content-between">
-                                                        <h6 class="mb-0">Member CheckIn</h6>
-                                                        <input type="text" class="mb-0 search-input" placeholder="Search Everything">
-                                                        <a href="#" class="transparent-btn btn btn-primary site-btn">Check In</a>
+                                                    <div class="modal-checkin-form modal-body-ps bg-grey">
+                                                        <div class="modal-max-container gap-3 py-3 px-0 d-lg-flex align-items-center justify-content-between">
+                                                            <h5 class="mb-0">Member CheckIn</h5>
+                                                            <input type="text" class="mb-0 search-input" placeholder="Search Everything">
+                                                            <a href="#" class="transparent-btn btn btn-primary site-btn">Check In</a>
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-body-ps p-3 d-flex align-items-center justify-content-between gap-3">
-                                                        <h5 class="mb-0">Member CheckIn</h5>  
-                                                        <a class="add-promo" href="#"><i class="fa-solid fa-circle-plus" aria-hidden="true"></i></a>
+                                                    <div class="modal-max-container">
+                                                        <div class="modal-body-ps">
+                                                            <div class="more-checkin py-3 px-0 border-bottom-grey d-flex align-items-center justify-content-between gap-3">
+                                                                <h5 class="mb-0">Member CheckIn</h5>  
+                                                                <a class="add-promo" href="#"><i class="fa-solid fa-circle-plus" aria-hidden="true"></i></a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-body-ps visitor-info py-3 px-0 d-flex align-items-center gap-4">
+                                                            <h5 class="mb-0"><strong>Member CheckIn</strong></h5>  
+                                                            <span>09-4647</span>
+                                                            <span>09-4647</span>
+                                                        </div>
+                                                        <div class="infiniteone-modal-tabs mt-2">
+                                                            <ul class="nav nav-tabs flex-nowrap justify-content-center" id="infinite-modal-tabs" role="tablist">
+                                                                <li class="nav-item" role="presentation">
+                                                                  <button class="nav-link active" id="pills-main-tab" data-bs-toggle="pill" data-bs-target="#pills-main" type="button" role="tab" aria-controls="pills-main" aria-selected="true">Main</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                  <button class="nav-link" id="pills-submembers-tab" data-bs-toggle="pill" data-bs-target="#pills-submembers" type="button" role="tab" aria-controls="pills-submembers" aria-selected="false">Submembers</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                  <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                  <button class="nav-link" id="pills-finfo-tab" data-bs-toggle="pill" data-bs-target="#pills-finfo" type="button" role="tab" aria-controls="pills-finfo" aria-selected="false">Financial Information</button>
+                                                                </li>
+                                                                <li class="nav-item" role="presentation">
+                                                                  <button class="nav-link" id="pills-history-tab" data-bs-toggle="pill" data-bs-target="#pills-history" type="button" role="tab" aria-controls="pills-history" aria-selected="false">Visit History</button>
+                                                                </li>
+                                                              </ul>
+                                                              <div class="tab-content" id="infinite-modal-tabsContent">
+                                                                <div class="tab-pane fade show active" id="pills-main" role="tabpanel" aria-labelledby="pills-main-tab" tabindex="0">
+                                                                    <div class="text-white p-3 bg-red my-3 exp-highlight">
+                                                                        <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Membership expired on 2021-01-15</span>
+                                                                    </div>
+                                                                    <div class="row maintenance-row mt-4">
+                                                                        <div class="col-lg-4">
+                                                                            <img class="img-fluid w-100" src="images/placeholder.jpg">
+                                                                            <a href="#" class="d-inline-block mt-4 transparent-btn btn btn-primary site-btn">Member Photo Maintenance</a>
+                                                                        </div>
+                                                                        <div class="col-lg-8 pt-4 text-red access-deny-col">
+                                                                            <h3>Access Denied</h3>
+                                                                            <ul>
+                                                                                <li>Membership has Expired</li>
+                                                                                <li>Membership has Expired</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-submembers" role="tabpanel" aria-labelledby="pills-submembers-tab" tabindex="0">
+                                                                    <div class="text-white p-3 bg-red my-3 exp-highlight">
+                                                                        <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Membership expired on 2021-01-15</span>
+                                                                    </div>
+                                                                    <h4 class="mt-3 text-capitalize fw-bold">Primary Member:</h4>
+                                                                    <div class="row maintenance-row mt-4">
+                                                                        <div class="col-lg-2">
+                                                                            <img class="img-fluid w-100" src="images/placeholder.jpg">
+                                                                        </div>
+                                                                        <div class="col-lg-10 access-deny-col">
+                                                                            <p>Member CheckIn</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <h4 class="mt-4 mb-3 text-capitalize fw-bold">Submembers:</h4>
+                                                                    <p>No Submembers for this account.</p>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                                                    <div class="text-white p-3 bg-red my-3 exp-highlight">
+                                                                        <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Membership expired on 2021-01-15</span>
+                                                                    </div>
+                                                                    <div class="row member-profile-info mt-4">
+                                                                        <div class="col-lg-3">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-lg-3">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-lg-3">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Email address</strong><a href="mailto:test@gmail.com">test@gmail.com</a></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-finfo" role="tabpanel" aria-labelledby="pills-finfo-tab" tabindex="0">
+                                                                    <div class="text-white p-3 bg-red my-3 exp-highlight">
+                                                                        <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Membership expired on 2021-01-15</span>
+                                                                    </div>
+                                                                    <div class="row member-profile-info mt-4">
+                                                                        <div class="col-lg-4">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="col-lg-4">
+                                                                            <ul class="ps-0">
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Email address</strong><a href="mailto:test@gmail.com">test@gmail.com</a></li>
+                                                                                <li><strong>Lorem Ipsum:</strong></li>
+                                                                                <li><strong>Lorem Ipsum:</strong>Lorem Ipsum:</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="tab-pane fade" id="pills-history" role="tabpanel" aria-labelledby="pills-history-tab" tabindex="0">
+                                                                    <div class="text-white p-3 bg-red my-3 exp-highlight">
+                                                                        <span class="d-flex align-items-center gap-2"><i class="fa-solid fa-circle-exclamation"></i> Membership expired on 2021-01-15</span>
+                                                                    </div>
+                                                                    <p>No Visit History available for this member.</p>
+                                                                </div>
+                                                              </div>
+                                                        </div>
                                                     </div>
-                                                    <div class="modal-body-ps visitor-info p-3 d-flex align-items-center gap-3">
-                                                        <h5 class="mb-0"><strong>Member CheckIn</strong></h5>  
-                                                        <span>09-4647</span>
-                                                        <span>09-4647</span>
-                                                    </div>
-
                                                 </div>
-                                                <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Understood</button>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
