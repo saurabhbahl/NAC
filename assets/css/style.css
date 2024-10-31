@@ -83,8 +83,19 @@ input, label, ::placeholder, textarea {
 input, label, ::placeholder, select, textarea {
     font-size: 14px;
 }
-button.site-btn {
+button.site-btn, .login-section .site-btn {
     width: 200px;
+}
+.left-sidebar .nav-link.active a, .left-sidebar .nav-link:hover a {
+    color: #fff;
+}
+.left-sidebar a {
+    text-decoration: none;
+    display: inline-block;
+}
+.nav-link:focus-visible {
+    outline: 0;
+    box-shadow: none;
 }
 .site-btn {
     background-color: var(--blue) !important;
@@ -410,7 +421,7 @@ a.view-all-reports {
 .account-information-col input, .members-information-col input {
     width: 100%;
 }
-#v-pills-new-acnt .form-label, #v-pills-new-acnt h6 {
+#v-pills-new-acnt .form-label, #v-pills-new-acnt h6, .build-agreement-section .form-label, .build-agreement-section h6 {
     margin-top: 20px;
 }
 select {
@@ -499,24 +510,19 @@ button.btn.btn-primary.view-agreement-btn {
 .agreement-buttons a:hover, button.btn.btn-primary.view-agreement-btn:hover {
     text-decoration: none;
 }
-.agreement-modal ul {
+.review-box ul {
     list-style: decimal;
     padding-left: 20px;
+    margin-bottom: 0;
 }
-.agreement-modal .modal-footer {
+.review-box .modal-footer {
     justify-content: space-between;
 }
 .modal-icons-footer {
     display: flex;
     gap: 20px;
 }
-.agreement-modal .modal-header .btn-close {
-    position: absolute;
-    right: 10px;
-    margin: 0;
-    top: 10px;
-}
-.agreement-modal .modal-header {
+.review-box .modal-header {
     justify-content: center;
     border-bottom: 0;
 }
@@ -629,7 +635,7 @@ ul.saved-reports-links {
 .infinitione-modal .modal-body {
     padding: 0;
 }
-.billing-tabs-section .modal .modal-dialog:not(.billing-tabs-section .agreement-modal.modal .modal-dialog) {
+.webapps-top-icon .modal .modal-dialog {
     position: fixed;
     margin: auto;
     width: 320px;
@@ -640,26 +646,23 @@ ul.saved-reports-links {
     transform: translate3d(0%, 0, 0);
     right: -320px;
 }
-.billing-tabs-section .modal .modal-content:not(.billing-tabs-section .agreement-modal.modal .modal-content) {
+.webapps-top-icon .modal .modal-content {
     height: 100%;
     overflow-y: auto;
     border-radius: 0px;
 }
-.billing-tabs-section .modal.show .modal-dialog:not(.billing-tabs-section .agreement-modal.modal.show .modal-dialog) {
+.webapps-top-icon .modal.show .modal-dialog {
     right: 0;
     -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
     -o-transition: opacity 0.3s linear, right 0.3s ease-out;
     transition: opacity 0.3s linear, right 0.3s ease-out;
 } 
-.agreement-modal.modal .modal-content {
+.review-box .review-box-content {
     border: 2px solid #000;
-    border-radius: 0;
+    padding: 30px 20px;
 }
-.agreement-modal .modal-footer {
-    border-top: 0;
-}
-.edit-client h6, .access-deny-col p, .agreement-modal .modal-header p {
+.edit-client h6, .access-deny-col p, .review-box .modal-header p {
     margin-bottom: 0;
 }
 .status i {

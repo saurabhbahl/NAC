@@ -21,15 +21,15 @@
                                 <div class="left-sidebar nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                     <img class="img-fluid nac-logo mb-4" alt="Site Logo" src="images/nac-logo.png" />
                                     <button class="nav-link" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="false">
-                                        <span>Dashboard</span>
+                                        <span><a href="dashboard.html">Dashboard</a></span>
                                     </button>
 
-                                    <button class="nav-link active" id="v-pills-new-account" data-bs-toggle="pill" data-bs-target="#v-pills-new-acnt" type="button" role="tab" aria-controls="v-pills-new-acnt" aria-selected="false">
-                                        <span>New Accounts</span>
+                                    <button class="nav-link" id="v-pills-new-account" data-bs-toggle="pill" data-bs-target="#v-pills-new-acnt" type="button" role="tab" aria-controls="v-pills-new-acnt" aria-selected="false">
+                                        <span><a href="new-accounts.html">New Accounts</a></span>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-accounts" data-bs-toggle="pill" data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-accounts" aria-selected="false">
-                                        <span>Accounts</span>
+                                        <span><a href="accounts.html">Accounts</a></span>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-client-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="false">
@@ -40,8 +40,8 @@
                                         <span>Payments</span>
                                     </button>
 
-                                    <button class="nav-link" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
-                                        <span>Reports</span>
+                                    <button class="nav-link active" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
+                                        <span><a href="recent-transactions.html">Reports</a></span>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-letters-tab" data-bs-toggle="pill" data-bs-target="#v-pills-letters" type="button" role="tab" aria-controls="v-pills-letters" aria-selected="false">
@@ -49,7 +49,7 @@
                                     </button>
 
                                     <button class="nav-link" id="v-pills-infinitione-tab" data-bs-toggle="pill" data-bs-target="#v-pills-infinitione" type="button" role="tab" aria-controls="v-pills-infinitione" aria-selected="false">
-                                        <span>InfinitiONE</span>
+                                        <span><a href="infinitione.html">InfinitiONE</a></span>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-system-tab" data-bs-toggle="pill" data-bs-target="#v-pills-system" type="button" role="tab" aria-controls="v-pills-system" aria-selected="false">
@@ -65,16 +65,18 @@
                                 <div class="tab-content" id="v-pills-tabContent">
                                     <div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
                                         <!-- tab inner content -->
-                                        <!-- tab inner content -->
                                     </div>
-                                    <div class="tab-pane fade active show" id="v-pills-new-acnt" role="tabpanel" aria-labelledby="v-pills-new-account">
-                                    <!-- tab inner content -->
+                                    <div class="tab-pane fade" id="v-pills-new-acnt" role="tabpanel" aria-labelledby="v-pills-new-account">
                                     <!-- tab inner content -->
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-accounts">accounts</div>
-                                    <div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-client-tab">client-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-client-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
                                     <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">payment-tab</div>
-                                    <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+                                    <div class="tab-pane fade  active show" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
                                     <!-- tab inner content -->
                                     <div class="row">
                                         <div class="col-lg-12">
@@ -204,10 +206,16 @@
                                     </div>
                                     <!-- tab inner content -->
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-letters" role="tabpanel" aria-labelledby="v-pills-letters-tab">letters-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-letters" role="tabpanel" aria-labelledby="v-pills-letters-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
                                     <div class="tab-pane fade" id="v-pills-infinitione" role="tabpanel" aria-labelledby="v-pills-infinitione-tab">...</div>
-                                    <div class="tab-pane fade" id="v-pills-system" role="tabpanel" aria-labelledby="v-pills-system-tab">system-tab</div>
-                                    <div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">help-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-system" role="tabpanel" aria-labelledby="v-pills-system-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
                                 </div>
                             </div>
                         </div>

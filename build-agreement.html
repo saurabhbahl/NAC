@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>NAC Billing Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/style.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" />
+        <script src="https://kit.fontawesome.com/151a7a2238.js" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    </head>
+    <main>
+        <section class="webapps-top-icon position-relative">
+            <button type="button" class="btn btn-primary settings-btn" data-bs-toggle="modal" data-bs-target="#webappsModal">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="webappsModal" tabindex="-1" aria-labelledby="webappsModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title fs-5" id="webappsModalLabel"><i class="fa-solid fa-gear"></i>WebApps</h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="search-input" placeholder="Search Everything" />
+                            <ul>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                                <li><i class="fa-solid fa-circle-check"></i> <a href="#">Demo</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="billing-tabs-section forms-section build-agreement-section">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-12">
+                        <div class="wrapper">
+                            <!-- Sidebar  -->
+                            <div id="sidebar" class="bg-grey px-3">
+                                <div class="left-sidebar nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <div class="nac-logo-col">
+                                        <img class="img-fluid nac-logo mb-4" alt="Site Logo" src="images/nac-logo.png" />
+                                    </div>
+                                    <button class="nav-link" id="v-pills-dashboard-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dashboard" type="button" role="tab" aria-controls="v-pills-dashboard" aria-selected="false">
+                                        <span><a href="dashboard.html">Dashboard</a></span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-new-account" data-bs-toggle="pill" data-bs-target="#v-pills-new-acnt" type="button" role="tab" aria-controls="v-pills-new-acnt" aria-selected="false">
+                                        <span><a href="new-accounts.html">New Accounts</a></span>
+                                    </button>
+
+                                    <button class="nav-link active" id="v-pills-accounts" data-bs-toggle="pill" data-bs-target="#v-pills-account" type="button" role="tab" aria-controls="v-pills-accounts" aria-selected="false">
+                                        <span><a href="accounts.html">Accounts</a></span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-client-tab" data-bs-toggle="pill" data-bs-target="#v-pills-clients" type="button" role="tab" aria-controls="v-pills-clients" aria-selected="false">
+                                        <span>Client Management</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-payment-tab" data-bs-toggle="pill" data-bs-target="#v-pills-payments" type="button" role="tab" aria-controls="v-pills-payments" aria-selected="false">
+                                        <span>Payments</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
+                                        <span><a href="recent-transactions.html">Reports</a></span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-letters-tab" data-bs-toggle="pill" data-bs-target="#v-pills-letters" type="button" role="tab" aria-controls="v-pills-letters" aria-selected="false">
+                                        <span>Letters</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-infinitione-tab" data-bs-toggle="pill" data-bs-target="#v-pills-infinitione" type="button" role="tab" aria-controls="v-pills-infinitione" aria-selected="false">
+                                        <span><a href="infinitione.html">InfinitiONE</a></span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-system-tab" data-bs-toggle="pill" data-bs-target="#v-pills-system" type="button" role="tab" aria-controls="v-pills-system" aria-selected="false">
+                                        <span>System</span>
+                                    </button>
+
+                                    <button class="nav-link" id="v-pills-help-tab" data-bs-toggle="pill" data-bs-target="#v-pills-help" type="button" role="tab" aria-controls="v-pills-help" aria-selected="false"><span>HELP</span></button>
+                                </div>
+                            </div>
+
+                            <!-- Page Content  -->
+                            <div id="content" class="">
+                                <div class="tab-content" id="v-pills-tabContent">
+                                    <div class="tab-pane fade" id="v-pills-dashboard" role="tabpanel" aria-labelledby="v-pills-dashboard-tab">
+                                        <!-- tab inner content -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-new-acnt" role="tabpanel" aria-labelledby="v-pills-new-account">
+                                        <!-- tab inner content -->
+                                    </div>
+                                    <div class="tab-pane accounts-tabs fade pb-5 active show" id="v-pills-account" role="tabpanel" aria-labelledby="v-pills-accounts">
+                                        <!-- Tab content -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <nav class="navbar navbar-expand-lg dashboard-header">
+                                                    <div class="container-fluid px-0">
+                                                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                                            <i class="fas fa-align-justify text-white"></i>
+                                                        </button>
+                                                        <h3 class="mb-0">Build Agreement</h3>
+                                                        <input type="text" placeholder="Search Everything" />
+                                                        <div class="header-links">
+                                                            <span>Welcome, Aaron</span>
+                                                            <a class="my-account-link" href="#">My Account</a>।<a class="logout-link" href="login.html">Logout</a>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <h3 class="text-capitalize text-secondary fw-bold">Client information</h3>
+                                        <div class="row">
+                                            <div class="col-lg-6 account-information">
+                                                <form>
+                                                    <h6 class="text-uppercase">account information</h6>
+                                                    <div class="account-info-date d-flex gap-3">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Date</label>
+                                                            <input type="date" id="contracted-date" name="contracted date" required />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Name of business</label>
+                                                            <input type="text" class="account-info-input" required />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">business ID</label>
+                                                            <input type="text" class="account-info-input" required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="owners-name d-flex gap-3 align-items-end">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Owner's Name</label>
+                                                            <input type="text" placeholder="First Name" class="account-info-input" required />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <input type="text" placeholder="Last Name" class="account-info-input" required />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Email Address</label>
+                                                            <input type="email" class="account-info-input" required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Company EIN or SSN</label>
+                                                    <input type="number" class="account-info-input" required />
+                                                    </div>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">Timezone</label>
+                                                        <select name="state" id="state">
+                                                            <option value="state1">America/New York</option>
+                                                            <option value="state2">America/New York</option>
+                                                        </select>
+                                                    </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-6 account-information personal-information">
+                                                <form>
+                                                    <h6 class="text-uppercase">submembers</h6>
+                                                    <div class="members-information-col gap-10 d-flex align-items-end">
+                                                        <div class="un-col">
+                                                            <label class="form-label">User Name</label>
+                                                            <input type="text" placeholder="John" />
+                                                        </div>
+                                                        <input type="text" placeholder="Smith" />
+                                                        <input type="text" placeholder="Email" />
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-12">
+                                                <h6 class="text-uppercase">contact information</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row contact-information">
+                                            <div class="col-lg-6">
+                                                <form>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Address</label>
+                                                        <input type="text" class="account-info-input" required />
+                                                    </div>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Address 2</label>
+                                                        <input type="text" class="account-info-input" required />
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">City</label>
+                                                            <input type="text" class="account-info-input" required="" />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label">State</label>
+                                                            <select name="state" id="state">
+                                                                <option value="state1">---</option>
+                                                                <option value="state2">----</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Zip</label>
+                                                            <input type="number" class="account-info-input" required="" />
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-6 account-information personal-information">
+                                                <form>
+                                                    <div class="account-information-col w-50 p-10">
+                                                        <label class="form-label">Home Phone</label>
+                                                        <input type="number" class="account-info-input" />
+                                                    </div>
+                                                    <div class="account-information-col w-50">
+                                                        <label class="form-label">Cell Phone</label>
+                                                        <input type="number" class="account-info-input" />
+                                                    </div>
+                                                    <div class="account-information-col w-50 p-10">
+                                                        <label class="form-label">Fax Number</label>
+                                                        <input type="number" class="account-info-input" />
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-12 business-information">
+                                                <h6 class="text-uppercase pt-2 heading-title">business information</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 pb-4 authorization-agreements-row">
+                                            <div class="col-lg-6 authorization-agreements">
+                                                <form>
+                                                    <div class="account-information-col w-50">
+                                                        <select name="state" id="state">
+                                                            <option value="state1">Heath Club (Promotion)</option>
+                                                            <option value="state2">Heath Club (Promotion)</option>
+                                                        </select>
+                                                    </div>
+                                                    <h6 class="d-inline-block text-uppercase pt-4 pb-2">type of authorization agreements</h6>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="term-specific" name="Term-Specific" value="Term-Specific" />
+                                                        <label for="Term-Specific">Term-Specific (No Rollover)</label>
+                                                    </div>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="month-to-month" name="Month to Month" value="Month to Month" />
+                                                        <label for="Month to Month">Month to Month</label>
+                                                    </div>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="term-specific" name="Term Specific" value="Term Specific" />
+                                                        <label for="Term Specific">Term-Specific (With Rollover)</label>
+                                                    </div>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="paid-in-full" name="Paid In Full" value="Paid In Full" />
+                                                        <label for="Paid In Full">Paid In Full</label>
+                                                    </div>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="donation" name="Donation" value="Donation" />
+                                                        <label for="Donation">Donation</label>
+                                                    </div>
+                                                    <div class="w-50 float-start">
+                                                        <input type="checkbox" id="other" name="Other" value="Other" />
+                                                        <label for="Other">Other</label>
+                                                        <div>
+                                                            <input type="text" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-6 account-information personal-information">
+                                                <form>
+                                                    <div class="years-info d-flex gap-3">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label">Year established</label>
+                                                            <input type="number" class="account-info-input" />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label">years at current location</label>
+                                                            <input type="number" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                    <h6 class="pt-4 pb-2">Is club required to charge Sales Tax on memberships?</h6>
+                                                    <div class="tax-info align-items-center gap-5 d-flex">
+                                                        <div class="form-check form-switch">
+                                                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked />
+                                                            <label class="form-check-label" for="flexSwitchCheckChecked">Yes</label>
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label">sales tax percent</label>
+                                                            <div class="percent-icon">
+                                                                <input type="number" class="account-info-input" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4 cancellation-changes-row">
+                                            <div class="col-lg-7 cancellation-col">
+                                                <form>
+                                                    <h6 class="pt-2 pb-2 text-uppercase">cancellation</h6>
+                                                    <input type="radio" id="terms" name="cancellations" value="terms" />
+                                                    <label for="terms">NAC will handle all cancellations according to the contract terms when member calls</label><br />
+                                                    <input type="radio" id="phone-cancel" name="cancellations" value="phone" />
+                                                    <label for="phone">Only the facility will handle cancellations and notify NAC via phone or email</label><br />
+                                                    <input type="radio" id="facility" name="cancellations" value="facility" />
+                                                    <label for="facility">cancellations may be made by both NAC and the facility</label>
+                                                    <div class="nac-process">
+                                                        <label for="relocation"> <input type="checkbox" id="relocationactivaitor" onclick="if(this.checked){ document.getElementById('relocation').focus();}" />Relocation</label>
+                                                        <input type="text" id="relocation" name="relocation" />
+                                                    </div>
+                                                    <div class="nac-process">
+                                                        <label for="medical-condition">
+                                                            <input type="checkbox" id="medical-conditionactivaitor" onclick="if(this.checked){ document.getElementById('medical-condition').focus();}" />Medical Condition
+                                                        </label>
+                                                        <input type="text" id="medical-condition" name="medical-condition" />
+                                                    </div>
+                                                    <div class="nac-process">
+                                                        <label for="early-termination">
+                                                            <input type="checkbox" id="early-terminationactivaitor" onclick="if(this.checked){ document.getElementById('early-termination').focus();}" />Early Termination Fee
+                                                        </label>
+                                                        <div class="pay-sign">
+                                                            <input type="number" id="early-termination" name="early-termination" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="">
+                                                        <input type="checkbox" id="written-notice" name="written notice" value="written notice" />
+                                                        <label for="written notice">30 day written notice (Month to Month contracts only)</label>
+                                                    </div>
+                                                    <div class="">
+                                                        <input type="checkbox" id="minor" name="Minor" value="Minor" />
+                                                        <label for="Minor">Minor</label>
+                                                    </div>
+                                                    <div class="nac-process">
+                                                        <label>Bad debt after 90 Days will be handled by: NAC Affiliates OR: </label>
+                                                        <input type="text" />
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <div class="col-lg-5 cancellation-col">
+                                                <form>
+                                                    <h6 class="pt-2 pb-0 mb-0 text-uppercase">changes</h6>
+                                                    <h5 class="pt-3 pb-2">Freezing of Accounts</h5>
+                                                    <div class="nac-process">
+                                                        <label for="Time Only"> <input type="checkbox" id="timeonlyactivaitor" onclick="if(this.checked){ document.getElementById('time-only').focus();}" />Time Only</label>
+                                                        <input type="text" id="time-only" name="Time Only" />
+                                                    </div>
+                                                    <div class="nac-process">
+                                                        <label for="Time and Payments">
+                                                            <input type="checkbox" id="timepaymentsactivaitor" onclick="if(this.checked){ document.getElementById('time-payments').focus();}" />Time and Payments
+                                                        </label>
+                                                        <input type="text" id="time-payments" name="Time and Payments" />
+                                                    </div>
+                                                    <h5 class="pt-3 pb-2">Payment Accounts</h5>
+                                                    <div class="nac-process">
+                                                        <label for="Month to Month Contracts">
+                                                            <input type="checkbox" id="monthcontractsactivaitor" onclick="if(this.checked){ document.getElementById('month-contracts').focus();}" />Month to Month Contracts
+                                                        </label>
+                                                        <input type="text" id="month-contracts" name="Month to Month Contracts" />
+                                                    </div>
+                                                    <div class="nac-process">
+                                                        <label for="Term-specific Contracts">
+                                                            <input type="checkbox" id="termsspecificcontractsactivaitor" onclick="if(this.checked){ document.getElementById('terms-specific-contracts').focus();}" />Term-specific Contracts
+                                                        </label>
+                                                        <input type="text" id="terms-specific-contracts" name="Term-specific Contracts" />
+                                                    </div>
+                                                    <h5 class="pt-3 pb-2">Change Forms</h5>
+                                                    <div class="input-me-5">
+                                                        <label for="additional changes">
+                                                            <input type="checkbox" id="additionalchangesactivaitor" onclick="if(this.checked){ document.getElementById('additional-changes').focus();}" />Any additional changes to account
+                                                        </label>
+                                                        <input type="text" id="additional-changes" name="additional changes" />
+                                                    </div>
+                                                    <div class="">
+                                                        <label for="Minor">Additional Instructions</label>
+                                                        <textarea rows="4" cols="50"></textarea>
+                                                    </div>
+                                               </form>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-12 electronic-funds">
+                                                <h6 class="text-uppercase mb-4 pt-2 heading-title">electronic funds transfer/debit authorization</h6>
+                                                <form>
+                                                    <input type="radio" id="business-checking-account" value="Business Checking Account" /><label for="business-checking-account"> Business Checking Account</label>
+                                                    <input type="radio" id="personal-account" value="Personal Account" /><label for="personal-account">Personal Account</label>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row electronic-funds-authorization">
+                                            <div class="col-lg-6">
+                                                <form>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Bank Name</label>
+                                                        <input type="text" class="account-info-input" required="" />
+                                                    </div>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Bank Address</label>
+                                                        <input type="text" class="account-info-input" required="" />
+                                                    </div>
+                                                    <div class="d-flex gap-3">
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">City</label>
+                                                            <input type="text" class="account-info-input" required="" />
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label">State</label>
+                                                            <select name="state" id="state">
+                                                                <option value="state1">---</option>
+                                                                <option value="state2">----</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="account-information-col">
+                                                            <label class="form-label required">Zip</label>
+                                                            <input type="number" class="account-info-input" required="" />
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <form>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Routing Number</label>
+                                                        <input type="number" class="account-info-input" required="" />
+                                                    </div>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Account Number</label>
+                                                        <input type="number" class="account-info-input" required="" />
+                                                    </div>
+                                                    <div class="account-information-col">
+                                                        <label class="form-label required">Name(s) as appears on account</label>
+                                                        <input type="text" class="account-info-input" required="" />
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-12 electronic-funds">
+                                                <h6 class="text-uppercase pt-2 heading-title">Business fees</h6>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-2">
+                                            <form>
+                                                <div class="col-lg-4">
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">EFT Per Transaction Fee</label>
+                                                        <div class="percent-icon">
+                                                            <input type="number" placeholder="2.65" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">Declined CC Transition Fee</label>
+                                                        <div class="pay-sign">
+                                                            <input type="number" placeholder=".95" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">Minimum per item fee</label>
+                                                        <div class="pay-sign">
+                                                            <input type="number" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">CC Per Transaction Fee</label>
+                                                        <div class="percent-icon">
+                                                            <input type="number" placeholder="6.52" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <div class="account-information-col">
+                                                        <label class="form-label">Declined Check/M.O. Transaction Fee</label>
+                                                        <div class="pay-sign">
+                                                            <input type="number" placeholder="14.95" class="account-info-input" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <form class="cancellation-col">
+                                            <h6 class="pt-2 pb-2 text-uppercase">Administrative charges</h6>
+                                            <input type="radio" id="terms" name="cancellations" value="terms" />
+                                            <label for="terms">Annual PCI Charge-$200.00 on January 15th of each year</label><br />
+                                            <input type="radio" id="phone-cancel" name="cancellations" value="phone" />
+                                            <label for="phone">Monthly PCI Charge-$24.00 the 1st of every month</label><br />
+                                        </form>
+                                        <div class="w-100 mt-5 pt-5 agreement-buttons d-flex align-items-center justify-content-end">
+                                            <a href="#" class="save-continue-btn"><i class="fa-regular fa-floppy-disk"></i>Save and Continue Later</a>
+                                            <a href="review-agreement.html" class="build-agreement-btn"><i class="fa-regular fa-file-pdf"></i>View Agreement</a>
+                                            <a href="#" class="build-agreement-btn btn btn-primary site-btn">Build Agreement</a>
+                                        </div>
+                                        <!-- tab inner content -->
+                                        <!-- Tab content -->
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-clients" role="tabpanel" aria-labelledby="v-pills-client-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">reports-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-letters" role="tabpanel" aria-labelledby="v-pills-letters-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-infinitione" role="tabpanel" aria-labelledby="v-pills-infinitione-tab">...</div>
+                                    <div class="tab-pane fade" id="v-pills-system" role="tabpanel" aria-labelledby="v-pills-system-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade" id="v-pills-help" role="tabpanel" aria-labelledby="v-pills-help-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/calendar.js"></script>
+        <script>
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal",
+                });
+
+                $("#sidebarCollapse").on("click", function () {
+                    $("#sidebar, #content").toggleClass("active");
+                    $(".collapse.in").toggleClass("in");
+                    $("a[aria-expanded=true]").attr("aria-expanded", "false");
+                });
+            });
+        </script>
+        <script type="text/javascript">
+            // Load google charts
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Draw the chart and set the chart values
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Task", "Hours per Day"],
+                    ["Canceled (80)", 8],
+                    ["Bad Debt (3)", 2],
+                    ["Expired (120)", 4],
+                    ["Delinquent (0)", 2],
+                    ["Active (7)", 8][("Frozen (32)", 8)][("Paid In Full (12)", 8)],
+                ]);
+
+                // Optional; add a title and set the width and height of the chart
+                var options = { title: "", width: 550, height: 400 };
+
+                // Display the chart inside the <div> element with id="piechart"
+                var chart = new google.visualization.PieChart(document.getElementById("piechart"));
+                chart.draw(data, options);
+            }
+        </script>
+    </body>
+</html>
