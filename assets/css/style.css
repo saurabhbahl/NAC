@@ -92,6 +92,9 @@ button.site-btn, .login-section .site-btn {
 .left-sidebar a {
     text-decoration: none;
     display: inline-block;
+    display: inline-block;
+    width: 100%;
+    text-align: left;
 }
 .nav-link:focus-visible {
     outline: 0;
@@ -120,10 +123,12 @@ button.site-btn, .login-section .site-btn {
 } 
 .nav-pills .nav-link span {
     padding: 5px 10px;
-    color: var(--blue) !important;
-    font-weight: 600;
     display: block;
     border-radius: 5px;
+}
+.nav-pills .nav-link span, #v-pills-reports-tab a.btn.btn-primary {
+    color: var(--blue);
+    font-weight: 600;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link, .nav-pills .nav-link span {
     background: transparent !important;
@@ -131,6 +136,10 @@ button.site-btn, .login-section .site-btn {
 .nav-pills .nav-link:hover span, .nav-pills .nav-link.active span,
  .nav-pills .show>.nav-link span {
     background-color: var(--blue) !important;
+    color: #fff!important;
+}
+.nav-pills .nav-link.active a,
+ .nav-pills .show>.nav-link a {
     color: #fff!important;
 }
 .forgot-password, .blue-color, .header-links a {
@@ -231,6 +240,31 @@ a[data-toggle="collapse"], .pay-sign, .form-switch, .percent-icon, .pay-sign-aft
     right: 20px;
     transform: translateY(-50%);
 }
+#collapseReports .card-body {
+    background: #eeeeee;   
+}
+#v-pills-reports-tab a.btn.btn-primary {
+    background: none;
+    padding: 0;
+}
+#v-pills-reports-tab:hover a.btn.btn-primary {
+    color: #fff!important;
+}
+#v-pills-reports-tab a.btn.btn-primary, #collapseReports .card-body {
+    border: none;
+}
+#collapseReports .card-body ul {
+    padding-left: 0;
+    margin-bottom: 0;
+}
+#collapseReports .card-body li:not(:last-child) {
+    margin-bottom: 5px;
+}
+.left-sidebar #collapseReports .card-body a {
+    color: var(--blue) !important;
+    font-size: 16px;
+    font-weight: 500;
+}
 #content {
     width: calc(100% - 250px);
     padding: 20px;
@@ -239,7 +273,7 @@ a[data-toggle="collapse"], .pay-sign, .form-switch, .percent-icon, .pay-sign-aft
     position: absolute;
     /* top: 0; */
     right: 0;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 #content.active, textarea {
     width: 100%;

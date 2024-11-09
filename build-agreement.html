@@ -72,7 +72,20 @@
                                     </button>
 
                                     <button class="nav-link" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
-                                        <span><a href="recent-transactions.html">Reports</a></span>
+                                        <span>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseReports" role="button" aria-expanded="false" aria-controls="collapseReports">
+                                              Reports
+                                            </a>
+                                        </span>
+                                        <div class="collapse" id="collapseReports">
+                                            <div class="card card-body">
+                                                <ul>
+                                                    <li><a href="recent-transactions.html">Recent Transactions</a></li>
+                                                    <li><a href="reports.html">Reports</a></li>
+                                                    <li><a href="create-report.html">Create Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-letters-tab" data-bs-toggle="pill" data-bs-target="#v-pills-letters" type="button" role="tab" aria-controls="v-pills-letters" aria-selected="false">
@@ -513,7 +526,160 @@
                                     <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">
                                         <h2>Screen not provided</h2>
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">reports-tab</div>
+                                    <div class="tab-pane fade" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+                                        <!-- tab inner content -->
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <nav class="navbar navbar-expand-lg dashboard-header">
+                                                    <div class="container-fluid px-0">
+                                                        <button type="button" id="sidebarCollapse" class="btn btn-info">
+                                                            <i class="fas fa-align-justify text-white" aria-hidden="true"></i>
+                                                        </button>
+                                                        <h3 class="mb-0">Dashboard</h3>
+                                                        <input type="text" placeholder="Search Everything">
+                                                        <div class="header-links">
+                                                            <span>Welcome, Aaron</span>
+                                                            <a class="my-account-link" href="#">My Account</a>।<a class="logout-link" href="login.html">Logout</a>
+                                                        </div>
+                                                    </div>
+                                                </nav>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-9 recent-transactions p-3">
+                                                <div class="d-flex justify-content-between">
+                                                    <div class="recent-transactions-inner">
+                                                        <h4 class="mb-3">Recent Transactions <i class="fa-solid fa-file-csv" aria-hidden="true"></i> <i class="fa-solid fa-print" aria-hidden="true"></i></h4>
+                                                    </div>
+                                                    <input type="text" placeholder="Search Everything">
+                                                </div>
+                                                <!-- calendar -->
+                                                <table>
+                                                    <tbody><tr>
+                                                    <th>Payment Date</th>
+                                                    <th>Cash Received Date</th>
+                                                    <th>Batch</th>
+                                                    <th>Method</th>
+                                                    <th>Category</th>
+                                                    <th>Amount</th>
+                                                    <th>Status</th>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/13/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7896</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>60.00</td>
+                                                    <td>Pending</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/14/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7901</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>40.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/15/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7934</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>120.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/16/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7896</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>80.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/17/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7896</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>40.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/18/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7896</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>140.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>11/19/2023</td>
+                                                    <td>11/17/2023</td>
+                                                    <td>7896</td>
+                                                    <td>ACH</td>
+                                                    <td>Member</td>
+                                                    <td>330.00</td>
+                                                    <td>Paid</td>
+                                                    </tr>
+                                                </tbody></table>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <h4>Reports</h4>
+                                                <div class="reports-col px-2 py-4">
+                                                    <div class="reports-buttons mb-3">
+                                                        <a href="reports.html" class="site-btn">Report Builder</a>
+                                                        <a href="#" class="site-btn report-queue">Report Queue</a>
+                                                    </div>
+                                                    <div class="reports-links">
+                                                        <a href="#">weekly cash receipts</a>
+                                                        <a href="#">batch summary</a>
+                                                        <a href="#">new account</a>
+                                                        <a href="#">renewal</a>
+                                                        <a href="#">fading</a>
+                                                        <a href="#" class="mt-5 mb-0 view-all-reports">view all reports</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 mt-4 quick-links-col">
+                                                <h4>Quick Links</h4>
+                                                <div class="row">
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="text-white bg-blue text-center">
+                                                            <i class="fa-regular fa-folder-open pb-2" aria-hidden="true"></i>
+                                                            <h6><a href="register.html">Add Account</a></h6>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 mb-3">
+                                                        <div class="text-white bg-blue text-center">
+                                                            <i class="fa-solid fa-user-plus pb-2" aria-hidden="true"></i>
+                                                            <h6><a href="build-agreement.html">Add Client</a></h6>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="col-lg-4">
+                                                        <div class="text-white bg-blue text-center">
+                                                            <i class="fa-solid fa-credit-card-front pb-2" aria-hidden="true"></i>
+                                                            <h6><a href="#">Take Payment</a></h6>
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <h4>Account Status</h4>
+                                            </div>
+                                            <div class="col-lg-3 mt-4">
+                                                <h4>Weekly Cash Receipts</h4>
+                                            </div>
+                                        </div>
+                                    <!-- tab inner content -->
+                                    </div>
                                     <div class="tab-pane fade" id="v-pills-letters" role="tabpanel" aria-labelledby="v-pills-letters-tab">
                                         <h2>Screen not provided</h2>
                                     </div>

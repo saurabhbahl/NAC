@@ -40,8 +40,25 @@
                                         <span>Payments</span>
                                     </button>
 
-                                    <button class="nav-link active" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
+                                    <!-- <button class="nav-link " id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
                                         <span><a href="recent-transactions.html">Reports</a></span>
+                                    </button> -->
+
+                                    <button class="nav-link active" id="v-pills-reports-tab" data-bs-toggle="pill" data-bs-target="#v-pills-reports" type="button" role="tab" aria-controls="v-pills-reports" aria-selected="false">
+                                        <span>
+                                            <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseReports" role="button" aria-expanded="false" aria-controls="collapseReports">
+                                              Reports
+                                            </a>
+                                        </span>
+                                        <div class="collapse" id="collapseReports">
+                                            <div class="card card-body">
+                                                <ul>
+                                                    <li><a href="recent-transactions.html">Recent Transactions</a></li>
+                                                    <li><a href="reports.html">Reports</a></li>
+                                                    <li><a href="create-report.html">Create Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </button>
 
                                     <button class="nav-link" id="v-pills-letters-tab" data-bs-toggle="pill" data-bs-target="#v-pills-letters" type="button" role="tab" aria-controls="v-pills-letters" aria-selected="false">
@@ -75,8 +92,10 @@
                                     <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">
                                         <h2>Screen not provided</h2>
                                     </div>
-                                    <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">payment-tab</div>
-                                    <div class="tab-pane fade  active show" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
+                                    <div class="tab-pane fade" id="v-pills-payments" role="tabpanel" aria-labelledby="v-pills-payment-tab">
+                                        <h2>Screen not provided</h2>
+                                    </div>
+                                    <div class="tab-pane fade active show" id="v-pills-reports" role="tabpanel" aria-labelledby="v-pills-reports-tab">
                                     <!-- tab inner content -->
                                     <div class="row">
                                         <div class="col-lg-12">
@@ -89,14 +108,14 @@
                                                     <input type="text" placeholder="Search Everything">
                                                     <div class="header-links">
                                                         <span>Welcome, Aaron</span>
-                                                        <a class="my-account-link" href="#">My Account</a>।<a class="logout-link" href="#">Logout</a>
+                                                        <a class="my-account-link" href="#">My Account</a>।<a class="logout-link" href="login.html">Logout</a>
                                                     </div>
                                                 </div>
                                             </nav>
                                         </div>
                                     </div>
                                     <h3 class="text-capitalize text-secondary fw-bold">Advanced Account Report</h3>
-                                    <div class="mt-4 gap-4 bg-grey p-4 d-lg-flex align-items-end">
+                                    <form class="mt-4 gap-4 bg-grey p-4 d-lg-flex align-items-end">
                                         <div class="account-information-col">
                                             <label class="form-label">Client</label>
                                             <select name="status" id="status">
@@ -139,69 +158,99 @@
                                                 <option value="Y">All</option>
                                             </select>
                                         </div>
-                                    </div>
+                                    </form>
                                     <div class="row align-items-end my-5">
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Entry Date</label>
-                                            <input type="date" id="contracted-date" name="contracted date">
+                                            <form>
+                                                <label class="form-label">Entry Date</label>
+                                                <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date">
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Contracted date</label>
-                                            <input type="date" id="contracted-date" name="contracted date">
+                                            <form>
+                                                <label class="form-label ">Contracted date</label>
+                                                <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date">
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Expiration Date</label>
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                                <label class="form-label ">Expiration Date</label>
+                                                <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="row align-items-end">
                                         <div class="col-lg-2">
-                                            <label class="form-label ">First Payment Date</label>
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                                <label class="form-label">First Payment Date</label>
+                                                <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                                <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Frozen date</label>
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <label class="form-label">Frozen date</label>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Cancel Date</label>
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <label class="form-label">Cancel Date</label>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date">
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="row align-items-end my-5">
                                         <div class="col-lg-2">
-                                            <label class="form-label ">Paid Until Date</label>
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                                <label class="form-label">Paid Until Date</label>
+                                                <input type="date" id="contracted-date" name="contracted date" >
+                                            </form>
                                         </div>
                                         <div class="col-lg-2 thru-icon">
-                                            <input type="date" id="contracted-date" name="contracted date" >
+                                            <form>
+                                               <input type="date" id="contracted-date" name="contracted date" >
+                                            </form>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-lg-12">
-                                            <p>*Bad Debt Date(Requires Status of "bad Debt")</p>
-                                            <div class="build-report d-flex align-items-baseline gap-4">
-                                                <button type="submit" class="site-btn mt-4">Build Report</button>
-                                                <p><a href="#" >Clear</a></p>
-                                            </div>
+                                            <form>
+                                                <p>*Bad Debt Date(Requires Status of "bad Debt")</p>
+                                                <div class="build-report d-flex align-items-baseline gap-4">
+                                                    <button type="submit" class="site-btn mt-4">Build Report</button>
+                                                    <p><a href="#">Clear</a></p>
+                                                </div>
+                                            </form>
                                         </div> 
                                     </div>
                                     <!-- tab inner content -->
