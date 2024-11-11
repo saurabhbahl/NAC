@@ -189,13 +189,13 @@ button#sidebarCollapse {
 }
 #sidebar {
     width: 250px;
-    position: fixed;
-    left: 0;
+    /* position: fixed;
+    left: 0; */
     height: 100vh;
     z-index: 999;
     color: #fff;
-    /* transition: all 0.3s; */
-    padding-top: 190px;
+    transition: all 0.3s; 
+    padding-top: 150px;
 }
 #sidebar.active {
     margin-left: -250px;
@@ -258,12 +258,16 @@ a[data-toggle="collapse"], .pay-sign, .form-switch, .percent-icon, .pay-sign-aft
     margin-bottom: 0;
 }
 #collapseReports .card-body li:not(:last-child) {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
+}
+.left-sidebar .nac-logo-col {
+    position: fixed;
+    top: 60px;
 }
 .left-sidebar #collapseReports .card-body a {
     color: var(--blue) !important;
-    font-size: 16px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 600;
 }
 #content {
     width: calc(100% - 250px);
