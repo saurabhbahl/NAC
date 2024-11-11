@@ -780,6 +780,13 @@ ul.saved-reports-links {
     padding: 5px 40px 5px 10px;
     color: #000000;
     background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.accounts-overview-footer input {
+    border: none !important;
+    text-transform: capitalize;
 }
 .accounts-overview-footer {
     z-index: 999;
