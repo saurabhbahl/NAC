@@ -263,7 +263,14 @@ a[data-toggle="collapse"], .pay-sign, .form-switch, .percent-icon, .pay-sign-aft
 }
 .left-sidebar .nac-logo-col {
     position: fixed;
-    top: 60px;
+    top: 0px;
+    background: #eeeeee;
+    height: 155px;
+    overflow: hidden;
+    width: 227px;
+    padding-top: 60px;
+    left: 15px;
+    right: 0;
 }
 .left-sidebar #collapseReports .card-body a {
     color: var(--blue) !important;
