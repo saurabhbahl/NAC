@@ -189,13 +189,14 @@ button#sidebarCollapse {
 }
 #sidebar {
     width: 250px;
-    /* position: fixed;
-    left: 0; */
+    position: fixed;
+    left: 0;
     height: 100vh;
     z-index: 999;
     color: #fff;
     transition: all 0.3s; 
     padding-top: 150px;
+    overflow-y: scroll;
 }
 #sidebar.active {
     margin-left: -250px;
@@ -433,6 +434,13 @@ a.view-all-reports {
 }
 .account-information-col {
     width: auto;
+}
+input[type="radio"] {
+    position: relative;
+    top: 2px;
+} 
+#personal-account {
+    margin-left: 10px;
 }
 .percent-icon {
     margin-right: 10px;
@@ -785,7 +793,7 @@ ul.saved-reports-links {
     padding-bottom: 5px;
     display: block;
 }
-form.late-lettters-form {
+.late-lettters-form {
     display: inline-block;
 }
 .border-bottom-grey {
@@ -822,12 +830,12 @@ form.late-lettters-form {
 .maintenance-row .site-btn {
     padding: 10px 10px !important;
 }
-form.roles-check {
+.roles-check {
     display: inline-grid;
     gap: 5px;
     grid-template-columns: auto auto auto auto auto auto auto auto auto;
 }
-form.roles-check label {
+.roles-check label {
     padding-right: 20px;
 }
 .user-btns {
