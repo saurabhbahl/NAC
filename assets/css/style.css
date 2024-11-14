@@ -1,7 +1,7 @@
 /***** global css *****/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 :root {
-  --blue:#1a4aa0;
+  --blue:#0088D7;
   --grey:#eeeeee;
   --red:#e61313;
 }
@@ -21,7 +21,7 @@ body {
 .text-red, .text-red * {
     color: var(--red);
 }
-h1 {
+h1:not(.login-heading) {
     font-size: 40px;
     line-height: 46px;  
 }
@@ -30,8 +30,12 @@ h2 {
     line-height: 38px;  
 }
 h3 {
-  font-size: 28px;
-  line-height: 32px;  
+    font-size: 28px;
+    line-height: 32px;  
+}
+.login-heading {
+    font-size: 25px;
+    line-height: 32px;  
 }
 h4 {
     font-size: 22px;
@@ -41,7 +45,7 @@ h5 {
     font-size: 18px; 
     line-height: 22px;  
 }
-h6 {
+h6, .form-label {
     font-size: 14px;
     line-height: 18px; 
 }
@@ -58,7 +62,10 @@ a:focus {
     text-decoration: underline;
 }
 .nac-logo {
-    width: 160px;
+    width: 210px;
+}
+.login-heading img {
+    margin-right: 10px;
 }
 .nac-logo:not(.forms-section .nac-logo) {
     position: fixed;
@@ -69,22 +76,20 @@ a:focus {
 }
 .required:after {
     content: '*';
-    color: #d72828;
-    padding-left: 10px;
+    color: #FF0000;
+    padding-left: 2px;
 }
 input:not(.file, .search-input, .search_input), textarea {
-    border:1px solid #000000!important;
-    border-radius: 0;
-    padding: 5px;
+    padding: 10px;
+    background: #F2EEEE;
+    border: 1px solid #DDD0CA!important;
+    border-radius: 5px;
 }
 input, label, ::placeholder, textarea {
     color: #000;
 }
 input, label, ::placeholder, select, textarea {
     font-size: 14px;
-}
-button.site-btn, .login-section .site-btn {
-    width: 200px;
 }
 .left-sidebar .nav-link.active a, .left-sidebar .nav-link:hover a {
     color: #fff;
@@ -102,12 +107,14 @@ button.site-btn, .login-section .site-btn {
 }
 .site-btn {
     background-color: var(--blue) !important;
-    padding: 11px 20px !important;
+    padding: 10px 25px !important;
     font-weight: 600 !important;
     border: 1px solid var(--blue) !important;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #fff;
     text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
 }
 .site-btn:hover {
     background-color: transparent!important;
@@ -267,7 +274,7 @@ a[data-toggle="collapse"], .pay-sign, .form-switch, .percent-icon, .pay-sign-aft
     background: #eeeeee;
     height: 155px;
     overflow: hidden;
-    width: 227px;
+    width: 215px;
     padding-top: 60px;
     left: 15px;
     right: 0;
